@@ -11,9 +11,9 @@ body {
     scroll-behavior: smooth; 
 }
 
-/* Fix: Navy Blue Navigation */
+/* Updated Header: Forces Navy Blue */
 nav { 
-    background: var(--navy) !important; /* !important forces the change */
+    background-color: var(--navy) !important; 
     padding: 1.2rem; 
     display: flex; 
     justify-content: space-between; 
@@ -27,7 +27,24 @@ nav .logo { color: var(--white); font-weight: bold; font-size: 1.5rem; }
 nav ul { display: flex; list-style: none; gap: 25px; margin: 0; }
 nav a { color: var(--white); text-decoration: none; font-weight: 600; }
 
-/* Chatbot: Navy Blue Theme */
+/* Hero Section */
+.gradient-bg {
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+section { 
+    background: white; 
+    margin: 30px auto; 
+    padding: 40px; 
+    max-width: 900px; 
+    border-radius: 12px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+}
+
+/* Updated Chatbot: Forces Navy Blue */
 #chat-container { 
     position: fixed; 
     bottom: 20px; 
@@ -40,15 +57,16 @@ nav a { color: var(--white); text-decoration: none; font-weight: 600; }
 }
 
 #chat-header { 
-    background: var(--navy); 
+    background-color: var(--navy) !important; 
     color: var(--white); 
     padding: 15px; 
     border-radius: 12px 12px 0 0; 
     font-weight: bold; 
+    text-align: center;
 }
 
 .chat-input-area button { 
-    background: var(--navy); 
+    background-color: var(--navy) !important; 
     color: var(--white); 
     border: none; 
     padding: 0 20px; 
