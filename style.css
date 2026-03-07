@@ -1,20 +1,8 @@
-/* This forces the header to Navy Blue */
 nav { 
-    background-color: #1a2a6c !important; 
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    background-color: #1a2a6c !important; /* Forced Navy Blue */
 }
 
-nav a { color: white !important; text-decoration: none; font-weight: bold; }
-
-/* This forces the chatbot to Navy Blue */
-#chat-header { 
+#chat-header, .chat-input-area button { 
     background-color: #1a2a6c !important; 
-    color: white !important; 
-}
-
-.chat-input-area button { 
-    background-color: #1a2a6c !important; 
-    color: white !important; 
+    color: white !important;
 }
