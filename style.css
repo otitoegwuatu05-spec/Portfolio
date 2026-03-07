@@ -1,5 +1,5 @@
 :root {
-    --navy: #1a2a6c; /* Deep Professional Navy */
+    --navy: #1a2a6c; 
     --emerald: #27ae60;
     --white: #ffffff;
 }
@@ -11,9 +11,9 @@ body {
     scroll-behavior: smooth; 
 }
 
-/* Updated Header: Navy Blue & Highly Readable */
+/* Fix: Navy Blue Navigation */
 nav { 
-    background: var(--navy); 
+    background: var(--navy) !important; /* !important forces the change */
     padding: 1.2rem; 
     display: flex; 
     justify-content: space-between; 
@@ -21,59 +21,13 @@ nav {
     position: sticky; 
     top: 0; 
     z-index: 1000; 
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
-nav .logo { 
-    color: var(--white); 
-    font-weight: bold; 
-    font-size: 1.5rem; 
-}
+nav .logo { color: var(--white); font-weight: bold; font-size: 1.5rem; }
+nav ul { display: flex; list-style: none; gap: 25px; margin: 0; }
+nav a { color: var(--white); text-decoration: none; font-weight: 600; }
 
-nav ul { 
-    display: flex; 
-    list-style: none; 
-    gap: 25px; 
-    margin: 0; 
-}
-
-nav a { 
-    color: var(--white); 
-    text-decoration: none; 
-    font-weight: 600; 
-    transition: 0.3s;
-}
-
-nav a:hover { color: #fdbb2d; }
-
-/* Hero Section */
-.gradient-bg {
-    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
-}
-
-section { 
-    background: white; 
-    margin: 30px auto; 
-    padding: 40px; 
-    max-width: 900px; 
-    border-radius: 12px; 
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
-}
-
-.btn-download {
-    background: var(--emerald);
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 30px;
-    display: inline-block;
-    font-weight: bold;
-}
-
-/* Updated Chatbot: Navy Blue Theme */
+/* Chatbot: Navy Blue Theme */
 #chat-container { 
     position: fixed; 
     bottom: 20px; 
@@ -88,4 +42,15 @@ section {
 #chat-header { 
     background: var(--navy); 
     color: var(--white); 
-    padding
+    padding: 15px; 
+    border-radius: 12px 12px 0 0; 
+    font-weight: bold; 
+}
+
+.chat-input-area button { 
+    background: var(--navy); 
+    color: var(--white); 
+    border: none; 
+    padding: 0 20px; 
+    cursor: pointer; 
+}
