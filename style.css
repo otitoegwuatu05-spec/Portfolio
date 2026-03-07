@@ -1,8 +1,20 @@
-nav { 
-    background-color: #1a2a6c !important; /* Forced Navy Blue */
+#chat-container {
+    position: fixed !important; /* Forces it to stay put */
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    height: auto;
+    background: white;
+    border: 2px solid #1a2a6c;
+    border-radius: 10px;
+    z-index: 9999; /* This makes sure it sits on top of the contact section */
+    display: block !important;
 }
 
-#chat-header, .chat-input-area button { 
-    background-color: #1a2a6c !important; 
-    color: white !important;
+#chat-header {
+    background-color: #1a2a6c;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
 }
