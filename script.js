@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", function() {
         // Default Reply
         let reply = "I'm not sure. Try asking about 'certifications', 'skills', or 'education'.";
 
-        // Logic for specific questions based on your background
+        // Responsive Logic based on your background
         if (text.includes("certifications") || text.includes("ccna") || text.includes("certified")) {
             reply = "Otito is a Cisco Certified Network Associate (CCNA).";
         } 
-        else if (text.includes("education") || text.includes("college") || text.includes("university")) {
-            reply = "Otito is currently pursuing a Bachelor of Science in Computer Technology at Bowie State University (Expected 2026).";
+        else if (text.includes("education") || text.includes("college") || text.includes("university") || text.includes("school")) {
+            reply = "Otito is currently pursuing a Bachelor of Science in Computer Technology at Bowie State University.";
         } 
         else if (text.includes("skills") || text.includes("what can you do")) {
             reply = "Otito is skilled in Java, Python, Linux, Network Security, and Creative Problem Solving.";
@@ -26,8 +26,8 @@ document.addEventListener("DOMContentLoaded", function() {
         else if (text.includes("work") || text.includes("experience") || text.includes("technician")) {
             reply = "Otito has been an IT Technician for the Watchman Catholic Charismatic Renewal Movement since 2021.";
         }
-        else if (text.includes("resume")) {
-            reply = "You can download Otito's full resume in the Resume section of this page!";
+        else if (text.includes("resume") || text.includes("download")) {
+            reply = "You can download Otito's full resume directly from the Resume section of this portfolio!";
         }
 
         // Display Bot Reply
@@ -38,10 +38,10 @@ document.addEventListener("DOMContentLoaded", function() {
         display.scrollTop = display.scrollHeight;
     }
 
-    // CLICK LISTENER: Works when clicking 'Send'
+    // 1. Works when clicking the 'Send' button
     sendBtn.onclick = askBot;
 
-    // KEYPRESS LISTENER: Works when pressing 'Enter'
+    // 2. WORKS WHEN PRESSING 'ENTER' KEY
     inputField.addEventListener("keypress", function(e) {
         if (e.key === "Enter") {
             askBot();
