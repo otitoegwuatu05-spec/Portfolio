@@ -1,74 +1,48 @@
+/* Navy Blue Theme Colors */
 :root {
-    --navy: #1a2a6c; 
-    --emerald: #27ae60;
+    --navy-blue: #1a2a6c;
     --white: #ffffff;
 }
 
-body { 
-    font-family: 'Segoe UI', sans-serif; 
-    margin: 0; 
-    background: #f4f7f6; 
-    scroll-behavior: smooth; 
-}
+body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f4f4f9; }
 
-/* Updated Header: Forces Navy Blue */
+/* Fixed Navy Header */
 nav { 
-    background-color: var(--navy) !important; 
-    padding: 1.2rem; 
+    background-color: var(--navy-blue) !important; 
+    padding: 15px 50px; 
     display: flex; 
     justify-content: space-between; 
-    align-items: center;
     position: sticky; 
     top: 0; 
     z-index: 1000; 
 }
 
-nav .logo { color: var(--white); font-weight: bold; font-size: 1.5rem; }
-nav ul { display: flex; list-style: none; gap: 25px; margin: 0; }
-nav a { color: var(--white); text-decoration: none; font-weight: 600; }
+nav .logo, nav ul li a { color: var(--white) !important; text-decoration: none; font-weight: bold; }
 
-/* Hero Section */
-.gradient-bg {
-    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
-}
-
-section { 
-    background: white; 
-    margin: 30px auto; 
-    padding: 40px; 
-    max-width: 900px; 
-    border-radius: 12px; 
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
-}
-
-/* Updated Chatbot: Forces Navy Blue */
+/* Chatbot Styles */
 #chat-container { 
     position: fixed; 
     bottom: 20px; 
     right: 20px; 
-    width: 320px; 
+    width: 300px; 
     background: white; 
-    border-radius: 12px; 
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2); 
-    z-index: 2000;
+    border-radius: 10px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
 }
 
 #chat-header { 
-    background-color: var(--navy) !important; 
-    color: var(--white); 
-    padding: 15px; 
-    border-radius: 12px 12px 0 0; 
-    font-weight: bold; 
+    background-color: var(--navy-blue) !important; 
+    color: var(--white) !important; 
+    padding: 12px; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
     text-align: center;
 }
 
 .chat-input-area button { 
-    background-color: var(--navy) !important; 
-    color: var(--white); 
+    background-color: var(--navy-blue) !important; 
+    color: var(--white) !important; 
     border: none; 
-    padding: 0 20px; 
+    padding: 10px; 
     cursor: pointer; 
 }
