@@ -1,48 +1,14 @@
-/* Navy Blue Theme Colors */
-:root {
-    --navy-blue: #1a2a6c;
-    --white: #ffffff;
-}
-
-body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f4f4f9; }
-
-/* Fixed Navy Header */
+/* Navy Blue Theme */
 nav { 
-    background-color: var(--navy-blue) !important; 
-    padding: 15px 50px; 
-    display: flex; 
-    justify-content: space-between; 
-    position: sticky; 
-    top: 0; 
-    z-index: 1000; 
-}
-
-nav .logo, nav ul li a { color: var(--white) !important; text-decoration: none; font-weight: bold; }
-
-/* Chatbot Styles */
-#chat-container { 
-    position: fixed; 
-    bottom: 20px; 
-    right: 20px; 
-    width: 300px; 
-    background: white; 
-    border-radius: 10px; 
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+    background-color: #1a2a6c !important; /* Deep Navy */
 }
 
 #chat-header { 
-    background-color: var(--navy-blue) !important; 
-    color: var(--white) !important; 
-    padding: 12px; 
-    border-top-left-radius: 10px; 
-    border-top-right-radius: 10px; 
-    text-align: center;
+    background-color: #1a2a6c !important; 
+    color: white !important;
 }
 
 .chat-input-area button { 
-    background-color: var(--navy-blue) !important; 
-    color: var(--white) !important; 
-    border: none; 
-    padding: 10px; 
-    cursor: pointer; 
+    background-color: #1a2a6c !important; 
+    color: white !important;
 }
