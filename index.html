@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio | [Your Name]</title>
-    
+    <title>Portfolio | Otito Egwuatu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <nav>
-        <div class="logo">MyPortfolio</div>
+        <div class="logo">Otito.Dev</div>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -20,62 +19,69 @@
         </ul>
     </nav>
 
-    <section id="home">
+    <section id="home" class="gradient-bg">
         <div class="hero">
-            <h1>Hi, I'm [Your Name]</h1>
-            <p>Aspiring Developer | Problem Solver | Tech Enthusiast</p>
+            <h1>Hi, I'm Otito Egwuatu</h1>
+            <p>Computer Technology Student at Bowie State University | IT Technician</p>
             <img src="qr-code.png" alt="Scan to view portfolio" class="qr-home">
         </div>
     </section>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a dedicated student focusing on modern web technologies. I enjoy building functional and aesthetic digital experiences.</p>
+        <p>I am a dedicated Computer Technology major at Bowie State University (Expected 2026) with a GPA of 3.1. I am passionate about learning, growing, and succeeding in the tech industry.</p>
         
-        <h3>Technical Skills</h3>
-        <ul>
-            <li>Frontend: HTML5, CSS3, JavaScript</li>
-            <li>Tools: Git, GitHub, VS Code</li>
-            <li>Extras: Chatbot Integration, UI/UX Design</li>
-        </ul>
+        <div class="skills-container">
+            <div>
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>Programming: Java, Python, JavaScript</li>
+                    <li>Networking: Cisco CCNA, Network Security</li>
+                    <li>Systems: Linux, PC Architecture, Database Management</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Team Building & Communication</li>
+                    <li>Creative Problem Solving</li>
+                    <li>Relationship Development</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
+        <h2>Projects & Academic Experience</h2>
         <div class="project-grid">
             <div class="project-card">
-                <h3>Personal Portfolio</h3>
-                <p>A responsive website featuring a custom JS chatbot and QR integration.</p>
-                <a href="https://github.com/[YourUsername]/portfolio" target="_blank">View Repository</a>
+                <h3>Bulldogs Scholars Academy</h3>
+                <p>Completed intensive summer program at BSU with a 4.0 GPA, focusing on core tech foundations.</p>
             </div>
+            <div class="project-card">
+                <h3>IT Technician Work</h3>
+                <p>Handling IT infrastructure and support for Watchman Catholic Charismatic Renewal Movement.</p>
             </div>
+        </div>
     </section>
 
-    <section id="resume">
+    <section id="resume" class="accent-section">
         <h2>Resume</h2>
-        <p>Download my updated resume to see my full professional background and achievements.</p>
-        <a href="resume.pdf" download="My_Resume" class="btn-download">Download Resume (PDF)</a>
+        <p>Interested in my full professional background? Download my latest resume below.</p>
+        <a href="Otito_Resume.pdf" download="Otito_Egwuatu_Resume" class="btn-download">Download Resume (PDF)</a>
     </section>
 
     <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <h2>Get In Touch</h2>
+        <p>Email: otitoegwuatu05@gmail.com</p>
+        <p>LinkedIn: linkedin.com/in/otito-egwuatu-221428278</p>
     </section>
 
     <div id="chat-container">
-        <div id="chat-header">
-            <span>Portfolio Assistant</span>
-        </div>
-        <div id="chat-display">
-            <p class="bot-msg">Hi! I'm your virtual assistant. Ask me about my <strong>skills</strong>, <strong>projects</strong>, or <strong>resume</strong>!</p>
-        </div>
+        <div id="chat-header">Otito's Assistant</div>
+        <div id="chat-display">Hi! Ask me about my skills, certifications, or education!</div>
         <div class="chat-input-area">
-            <input type="text" id="user-input" placeholder="Ask me something...">
+            <input type="text" id="user-input" placeholder="Type here...">
             <button onclick="askBot()">Send</button>
         </div>
     </div>
