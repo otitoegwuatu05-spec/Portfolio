@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Professional Portfolio | [Your Name]</title>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <nav>
+        <div class="logo">MyPortfolio</div>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -18,22 +21,61 @@
     </nav>
 
     <section id="home">
-        <h1>Hi, I'm [Your Name]</h1>
-        <p>Welcome to my professional space.</p>
-        <img src="qr-code.png" alt="Scan to visit" width="100">
+        <div class="hero">
+            <h1>Hi, I'm [Your Name]</h1>
+            <p>Aspiring Developer | Problem Solver | Tech Enthusiast</p>
+            <img src="qr-code.png" alt="Scan to view portfolio" class="qr-home">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a dedicated student focusing on modern web technologies. I enjoy building functional and aesthetic digital experiences.</p>
+        
+        <h3>Technical Skills</h3>
+        <ul>
+            <li>Frontend: HTML5, CSS3, JavaScript</li>
+            <li>Tools: Git, GitHub, VS Code</li>
+            <li>Extras: Chatbot Integration, UI/UX Design</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Personal Portfolio</h3>
+                <p>A responsive website featuring a custom JS chatbot and QR integration.</p>
+                <a href="https://github.com/[YourUsername]/portfolio" target="_blank">View Repository</a>
+            </div>
+            </div>
     </section>
 
     <section id="resume">
         <h2>Resume</h2>
-        <p>Download my latest professional background:</p>
-        <a href="resume.pdf" download class="btn">Download Resume (PDF)</a>
+        <p>Download my updated resume to see my full professional background and achievements.</p>
+        <a href="resume.pdf" download="My_Resume" class="btn-download">Download Resume (PDF)</a>
     </section>
 
-    <div id="chat-box">
-        <div id="chat-header">Portfolio Assistant</div>
-        <div id="chat-display">Hi! Ask me about my 'skills', 'projects', or 'experience'.</div>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <div id="chat-container">
+        <div id="chat-header">
+            <span>Portfolio Assistant</span>
+        </div>
+        <div id="chat-display">
+            <p class="bot-msg">Hi! I'm your virtual assistant. Ask me about my <strong>skills</strong>, <strong>projects</strong>, or <strong>resume</strong>!</p>
+        </div>
         <div class="chat-input-area">
-            <input type="text" id="user-input" placeholder="Type here...">
+            <input type="text" id="user-input" placeholder="Ask me something...">
             <button onclick="askBot()">Send</button>
         </div>
     </div>
