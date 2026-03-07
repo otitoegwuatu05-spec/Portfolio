@@ -1,14 +1,20 @@
-/* Navy Blue Theme */
+/* This forces the header to Navy Blue */
 nav { 
-    background-color: #1a2a6c !important; /* Deep Navy */
+    background-color: #1a2a6c !important; 
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
 
+nav a { color: white !important; text-decoration: none; font-weight: bold; }
+
+/* This forces the chatbot to Navy Blue */
 #chat-header { 
     background-color: #1a2a6c !important; 
-    color: white !important;
+    color: white !important; 
 }
 
 .chat-input-area button { 
     background-color: #1a2a6c !important; 
-    color: white !important;
+    color: white !important; 
 }
