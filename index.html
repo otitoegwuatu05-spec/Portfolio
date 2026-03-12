@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Otito Egwuatu | Portfolio</title>
-    <link rel="stylesheet" href="style.css?v=3"> </head>
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
 <body>
 
     <nav>
-        <div class="logo-container">
-            <span class="logo-text">Otito's Website</span>
-        </div>
-        
+        <div class="logo">Otito's Website</div>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -21,11 +19,10 @@
         </ul>
     </nav>
 
-    <header id="home">
+    <header id="home" class="gradient-bg">
         <div class="hero">
             <h1>Hi, I'm Otito Egwuatu</h1>
-            <p>Computer Technology Student at Bowie State University | IT Technician</p>
-            <img src="qr-code.png" alt="Scan to view portfolio" class="qr-home">
+            <p>Computer Technology Student at Bowie State University</p>
         </div>
     </header>
 
@@ -70,7 +67,7 @@
         <div id="chat-display">Hi! Ask me about my skills or the CCNA!</div>
         <div class="chat-input-area">
             <input type="text" id="user-input" placeholder="Type here...">
-            <button id="send-btn" onclick="askBot()">Send</button>
+            <button onclick="askBot()">Send</button>
         </div>
     </div>
 
