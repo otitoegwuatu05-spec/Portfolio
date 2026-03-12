@@ -4,7 +4,7 @@
 This repository contains my personal professional portfolio website, designed to showcase my technical skills, cybersecurity projects, and academic background. The site features a clean, professional **Navy & Cream** aesthetic and is optimized for both desktop and mobile viewing.
 
 ## 🚀 Key Features
-* **Interactive AI Chatbot:** A custom-built assistant that provides instant information about my GPA (3.1), Cisco CCNA certification, and technical background.
+* **Interactive AI Chatbot:** A custom-built assistant that provides instant information.
 * **Mobile Connectivity:** Integrated QR Code functionality, allowing recruiters to transition from physical resumes to this digital portfolio instantly.
 * **Professional Branding:** A tailored UI/UX featuring Bowie State University's academic context and a focus on IT technical skills.
 * **Responsive Design:** Styled with CSS Flexbox and custom media queries for a seamless experience across devices.
