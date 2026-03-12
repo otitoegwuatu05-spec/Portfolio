@@ -1,95 +1,34 @@
-/* 1. Reset and Background */
-body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    /* Replacing the plain white with a hint of Cream/Tan */
-    background-color: #fdf5e6 !important; /* OldLace/Cream color */
-    color: #333333; 
-    line-height: 1.6;
-}
-
-/* 2. Precision Navy Header (Updating the Gray parts) */
-nav {
-    /* Replacing Gray/Charcoal with Deep Navy Blue */
-    background-color: #1a2a6c !important; 
-    padding: 20px 0;
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-nav .logo {
-    color: white;
-    padding-left: 5%;
-    font-weight: bold;
-    font-size: 1.2rem;
+/* 1. Target the Intro Text */
+header .hero h1 {
+    color: #1a2a6c !important; /* Forces "Hi, I'm Otito Egwuatu" to Navy Blue */
+    font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center; /* Centered like your reference image */
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 60px; /* Wide spacing maintained */
+/* 2. Hover Effect for Navigation Links */
+nav ul li a {
+    transition: 0.3s; /* Makes the transition smooth */
 }
 
-nav a {
-    color: #ffffff !important;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.9rem;
+nav ul li a:hover {
+    color: #fdbb2d !important; /* Turns gold/yellow on hover for a technical feel */
+    text-decoration: underline;
 }
 
-/* 3. Section Containers (Keeping these White/Bright Cream) */
-section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 40px;
-    /* Soft white with a tiny hint of cream to contrast with the background */
-    background: #fffdfa; 
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08); 
-}
-
-h2 {
-    /* Header border updated to Navy to match the nav */
-    color: #1a2a6c;
-    border-bottom: 2px solid #1a2a6c;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-/* 4. Chatbot Styling (Navy theme) */
-#chat-container {
-    position: fixed !important;
-    bottom: 20px;
-    right: 20px;
-    width: 300px;
-    background: white;
-    border: 1px solid #1a2a6c;
-    border-radius: 10px;
-    z-index: 2000;
-}
-
-#chat-header {
-    background: #1a2a6c; /* Navy header for the bot */
-    color: white;
-    padding: 10px;
-    border-radius: 10px 10px 0 0;
-    text-align: center;
-}
-
-/* 5. Emerald Buttons (Keep these for a pop of color) */
+/* 3. Hover Effect for Buttons (Emerald Green) */
 .btn-download, .git-link {
-    background: #27ae60 !important;
-    color: white !important;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 10px;
-    font-weight: bold;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn-download:hover, .git-link:hover {
+    background-color: #1e8449 !important; /* Slightly darker emerald on hover */
+    transform: translateY(-3px); /* Subtle lift effect */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* 4. Hover Effect for the Chatbot Send Button */
+#chat-container button:hover {
+    background-color: #1a2a6c !important;
+    color: white;
+    cursor: pointer;
 }
