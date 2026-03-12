@@ -7,23 +7,14 @@ body {
     line-height: 1.6;
 }
 
-/* 2. Navy Header (Flex Layout for Logo + Links) */
+/* 2. Navy Header (Horizontal Layout) */
 nav {
     background-color: #1a2a6c !important; /* Navy Blue */
-    padding: 15px 5%; /* Horizontal padding for logo breathing room */
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
+    padding: 20px 0;
+    width: 100%;
     position: sticky;
     top: 0;
     z-index: 1000;
-}
-
-.logo-container .logo-text {
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 1.3rem;
-    letter-spacing: 0.5px;
 }
 
 nav ul {
@@ -32,46 +23,81 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 40px;
+    gap: 50px;
 }
 
 nav a {
     color: #ffffff !important;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
+    transition: color 0.3s; /* Smooth Hover Transition */
 }
 
-/* HOVER: Word color only */
+/* HOVER: Change word color only */
 nav a:hover {
-    color: #fdbb2d !important; /* Gold on hover */
+    color: #fdbb2d !important; /* Turns Gold on hover */
 }
 
 /* 3. Hero Section & Navy Blue Name */
-#home {
-    text-align: center;
-    padding: 60px 20px;
-}
-
 #home h1 {
-    color: #1a2a6c !important; /* Navy Blue */
-    font-size: 2.8rem;
-    margin-bottom: 5px;
+    color: #1a2a6c !important; /* Makes "Hi, I'm Otito" Navy Blue */
+    font-size: 2.5rem;
+    margin-top: 40px;
+    text-align: center;
 }
 
 #home p {
-    font-size: 1.1rem;
-    color: #555;
-}
-
-.qr-home {
-    margin-top: 20px;
-    max-width: 150px;
-    border-radius: 8px;
+    text-align: center;
 }
 
 /* 4. Section Containers */
 section {
     max-width: 800px;
-    margin: 30px auto;
-    padding: 40px;
+    margin: 20px auto;
+    padding: 30px;
+    background: #fffdfa; /* Brighter cream for boxes */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #1a2a6c;
+    border-bottom: 2px solid #1a2a6c;
+    padding-bottom: 10px;
+}
+
+/* 5. Button Hover Effects */
+.btn-download, .git-link {
+    background-color: #27ae60 !important; /* Emerald Green */
+    color: white !important;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* HOVER: Darkens color and lifts slightly */
+.btn-download:hover, .git-link:hover {
+    background-color: #1e8449 !important;
+    transform: translateY(-2px);
+}
+
+/* 6. Chatbot Fixed in Corner */
+#chat-container {
+    position: fixed !important;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    border: 1px solid #1a2a6c;
+    border-radius: 10px;
+    z-index: 2000;
+}
+
+#chat-header {
+    background: #1a2a6c;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
