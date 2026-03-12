@@ -1,10 +1,15 @@
-/* Update your home section to use !important to force the color change */
-#home.gradient-bg {
+body {
     background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d) !important;
-    color: white !important;
+    margin: 0;
 }
 
-/* Ensure the nav bar is forced to Navy */
 nav {
-    background-color: #1a2a6c !important;
+    background: #1a2a6c !important; /* Forces the Navy Blue */
+}
+
+#chat-container { /* Matches the HTML ID exactly */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
 }
