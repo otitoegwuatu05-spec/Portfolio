@@ -1,17 +1,15 @@
-/* 1. Reset and Background */
+/* 1. Background and Base Text */
 body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
-    /* Replacing the plain white with a hint of Cream/Tan */
-    background-color: #fdf5e6 !important; /* OldLace/Cream color */
-    color: #333333; 
+    background-color: #fdf5e6 !important; /* Cream/Tan Background */
+    color: #333333;
     line-height: 1.6;
 }
 
-/* 2. Precision Navy Header (Updating the Gray parts) */
+/* 2. Navy Header (Horizontal Layout) */
 nav {
-    /* Replacing Gray/Charcoal with Deep Navy Blue */
-    background-color: #1a2a6c !important; 
+    background-color: #1a2a6c !important; /* Navy Blue */
     padding: 20px 0;
     width: 100%;
     position: sticky;
@@ -19,50 +17,73 @@ nav {
     z-index: 1000;
 }
 
-nav .logo {
-    color: white;
-    padding-left: 5%;
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
 nav ul {
     display: flex;
-    justify-content: center; /* Centered like your reference image */
+    justify-content: center;
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 60px; /* Wide spacing maintained */
+    gap: 50px;
 }
 
 nav a {
     color: #ffffff !important;
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.9rem;
+    transition: color 0.3s; /* Smooth Hover Transition */
 }
 
-/* 3. Section Containers (Keeping these White/Bright Cream) */
+/* HOVER: Change word color only */
+nav a:hover {
+    color: #fdbb2d !important; /* Turns Gold on hover */
+}
+
+/* 3. Hero Section & Navy Blue Name */
+#home h1 {
+    color: #1a2a6c !important; /* Makes "Hi, I'm Otito" Navy Blue */
+    font-size: 2.5rem;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#home p {
+    text-align: center;
+}
+
+/* 4. Section Containers */
 section {
     max-width: 800px;
     margin: 20px auto;
-    padding: 40px;
-    /* Soft white with a tiny hint of cream to contrast with the background */
-    background: #fffdfa; 
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08); 
+    padding: 30px;
+    background: #fffdfa; /* Brighter cream for boxes */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 h2 {
-    /* Header border updated to Navy to match the nav */
     color: #1a2a6c;
     border-bottom: 2px solid #1a2a6c;
     padding-bottom: 10px;
-    margin-bottom: 20px;
 }
 
-/* 4. Chatbot Styling (Navy theme) */
+/* 5. Button Hover Effects */
+.btn-download, .git-link {
+    background-color: #27ae60 !important; /* Emerald Green */
+    color: white !important;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* HOVER: Darkens color and lifts slightly */
+.btn-download:hover, .git-link:hover {
+    background-color: #1e8449 !important;
+    transform: translateY(-2px);
+}
+
+/* 6. Chatbot Fixed in Corner */
 #chat-container {
     position: fixed !important;
     bottom: 20px;
@@ -75,21 +96,8 @@ h2 {
 }
 
 #chat-header {
-    background: #1a2a6c; /* Navy header for the bot */
+    background: #1a2a6c;
     color: white;
     padding: 10px;
     border-radius: 10px 10px 0 0;
-    text-align: center;
-}
-
-/* 5. Emerald Buttons (Keep these for a pop of color) */
-.btn-download, .git-link {
-    background: #27ae60 !important;
-    color: white !important;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 10px;
-    font-weight: bold;
 }
