@@ -24,4 +24,4 @@ This repository contains my personal professional portfolio website, designed to
 ## 🎓 Academic & Certifications
 * **Bowie State University:** B.S. in Computer Technology (Current)
 * **Cisco:** CCNA Certified
-* **University of Arizona:** B.S. in Business Management
+
