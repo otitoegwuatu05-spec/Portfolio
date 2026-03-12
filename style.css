@@ -1,15 +1,87 @@
+/* 1. Reset and Background */
 body {
-    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d) !important;
+    font-family: 'Segoe UI', sans-serif;
     margin: 0;
+    background-color: #ffffff !important; /* Forces background to pure white */
+    color: #333333; /* Dark grey text for readability */
+    line-height: 1.6;
 }
 
+/* 2. Precision Header (Matching your reference) */
 nav {
-    background: #1a2a6c !important; /* Forces the Navy Blue */
+    background-color: #333333 !important; /* Dark charcoal/black header */
+    padding: 20px 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-#chat-container { /* Matches the HTML ID exactly */
-    position: fixed;
+nav .logo {
+    color: white;
+    padding-left: 5%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; /* Centers the links like in your image */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 60px; /* Wide spacing between links */
+}
+
+nav a {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+
+nav a:hover {
+    color: #cccccc !important; /* Subtle hover effect */
+}
+
+/* 3. Section Containers (White Boxes) */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 8px;
+    /* Subtle shadow to match your reference layout */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); 
+}
+
+h2 {
+    color: #000;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* 4. Chatbot Visibility Fix */
+#chat-container {
+    position: fixed !important;
     bottom: 20px;
     right: 20px;
-    z-index: 1000;
+    width: 300px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    z-index: 2000;
+    color: #333;
+}
+
+#chat-header {
+    background: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
 }
