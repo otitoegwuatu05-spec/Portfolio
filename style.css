@@ -1,80 +1,48 @@
-/* --- Global Theme --- */
-* {
-    box-sizing: border-box;
+/* --- Floating Chatbot Bubble --- */
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    border-radius: 15px; /* Bubble corners */
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+    overflow: hidden;
+    z-index: 1000;
+    border: 1px solid #1a2a6c;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #fffdfa; /* Cream Background */
-    color: #1a2a6c; /* Navy Text */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* --- Navigation Header --- */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 5%;
-    background-color: #1a2a6c; /* Navy Blue Header */
+#chatbot-header {
+    background-color: #1a2a6c; /* Matching Navy Header */
     color: white;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.nav-logo {
-    width: 45px;
-    height: auto;
-    border-radius: 50%;
-}
-
-/* --- Layout Centering --- */
-.page-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 85vh; /* Centers content vertically */
+    padding: 10px;
     text-align: center;
-    padding: 20px;
+    font-weight: bold;
 }
 
-/* --- Green Bubble Button --- */
-.btn-bubble {
+#chat-window {
+    height: 250px;
+    padding: 10px;
+    overflow-y: auto;
+    font-size: 0.9rem;
+}
+
+.chat-input-area {
+    display: flex;
+    border-top: 1px solid #eee;
+}
+
+#user-input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+
+#send-btn {
     background-color: #2ecc71; /* Emerald Green */
     color: white;
-    padding: 12px 30px;
-    border-radius: 50px; /* Bubble rounded look */
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
     border: none;
+    padding: 10px 15px;
     cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.btn-bubble:hover {
-    transform: scale(1.05);
-}
-
-/* --- Content Card (For Projects/Contact) --- */
-.info-card {
-    background: white;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-    max-width: 700px;
-    width: 100%;
 }
