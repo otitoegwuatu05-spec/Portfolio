@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Otito Egwuatu</title>
-    <link rel="stylesheet" href="style.css?v=13">
+    <title>Home | Otito Egwuatu</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="static-bg">
+<body>
 
     <nav>
         <div class="logo-container">
-            <a href="./" class="logo-link">
-                <img src="logo.png" alt="Logo" class="nav-logo">
-            </a>
+            <a href="./"><img src="logo.png" alt="Logo" class="nav-logo"></a>
         </div>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -23,32 +21,14 @@
         </ul>
     </nav>
 
-    <div class="content-container">
-        <div class="info-card">
-            <h2 style="color: #1a2a6c; margin-bottom: 30px;">My Projects</h2>
-            
-            <div class="project-item" style="margin-bottom: 40px; border-bottom: 1px solid #f0f0f0; padding-bottom: 20px;">
-                <h3 style="color: #1a2a6c;">Copilot Packet Sniffer</h3>
-                <p>A network tool for monitoring and auditing data packets developed using Python and Scapy.</p>
-                <a href="https://github.com/otitoegwuatu05-spec/copilot-packet-sniffer" target="_blank" class="btn-download">View on GitHub</a>
-            </div>
-
-            <div class="project-item">
-                <h3 style="color: #1a2a6c;">Professional Portfolio</h3>
-                <p>Custom-built portfolio showcasing web development and AI integration.</p>
-                <a href="https://github.com/otitoegwuatu05-spec/Portfolio" target="_blank" class="btn-download">View Source Code</a>
-            </div>
-        </div>
+    <div class="page-wrapper">
+        <img src="logo.png" alt="Otito Egwuatu" style="width: 120px; border-radius: 50%; margin-bottom: 25px;">
+        <h1 style="font-size: 3rem; margin-bottom: 10px;">Hi, I'm Otito Egwuatu</h1>
+        <p style="font-size: 1.2rem; margin-bottom: 30px;">Senior Computer Technology Student at Bowie State University</p>
+        <a href="projects.html" class="btn-emerald">View My Projects</a>
     </div>
 
-    <div id="chat-container">
-        <div id="chat-header">Assistant</div>
-        <div id="chat-display">Hi! Ask me about my Scapy project!</div>
-        <div class="chat-input-area">
-            <input type="text" id="user-input" placeholder="Type here...">
-            <button id="send-btn" onclick="askBot()">Send</button>
-        </div>
-    </div>
+    <div id="chat-container">...</div>
 
     <script src="script.js"></script>
 </body>
