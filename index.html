@@ -2,39 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Otito Egwuatu</title>
     <link rel="stylesheet" href="style.css">
+    <title>Home | Otito Egwuatu</title>
 </head>
 <body>
     <nav>
-        <div class="logo-container">
-            <a href="index.html"><img src="logo.png" alt="Logo" class="nav-logo"></a>
-        </div>
+        <div class="logo-container"><a href="index.html"><img src="logo.png" class="nav-logo"></a></div>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-
     <div class="page-container">
-        <img src="logo.png" alt="Otito" style="width: 130px; height: 130px; border-radius: 50%; margin-bottom: 25px;">
+        <img src="logo.png" style="width: 130px; border-radius: 50%; margin-bottom: 25px;">
         <h1>Hi, I'm Otito Egwuatu</h1>
         <p>Senior Computer Technology Student at Bowie State University</p>
         <a href="projects.html" class="btn-bubble">View My Projects</a>
     </div>
-
     <div id="chatbot-container">
         <div id="chatbot-header">Assistant</div>
-        <div id="chat-window"><p>Hi! Ask me about my skills or GPA!</p></div>
+        <div id="chat-window"><p>Ask me about my skills!</p></div>
         <div class="chat-input-area">
-            <input type="text" id="user-input" placeholder="Type here...">
+            <input type="text" id="user-input" placeholder="Type...">
             <button id="send-btn">Send</button>
         </div>
     </div>
-    <script src="chatbot.js"></script>
 </body>
 </html>
