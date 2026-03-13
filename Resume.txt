@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Otito Egwuatu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Download my full resume for details on my work as an IT Technician.</p>
+        <a href="Otito_Resume.pdf" download class="btn-download">Download Resume (PDF)</a>
+    </section>
+</body>
+</html>
