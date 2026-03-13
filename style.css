@@ -1,49 +1,26 @@
-/* 1. Animated Gradient Background */
-.animated-bg {
-    background: linear-gradient(-45deg, #fffdfa, #f4f1ea, #e8e4d9, #fffdfa);
-    background-size: 400% 400%;
-    animation: gradientMove 12s ease infinite;
-    min-height: 100vh;
-    overflow-x: hidden;
-}
-
-@keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-/* 2. Bigger, Floating Hero Logo */
+/* Adjusted Hero Logo Size */
 .main-hero-logo {
-    width: 220px; /* Significantly larger as requested */
+    width: 150px; /* Scaled down from 220px */
     height: auto;
     border-radius: 50%;
-    box-shadow: 0 10px 30px rgba(26, 42, 108, 0.15);
-    animation: float 4s ease-in-out infinite; /* Makes the logo move up and down slightly */
+    box-shadow: 0 8px 20px rgba(26, 42, 108, 0.1);
+    animation: float 5s ease-in-out infinite; /* Slightly slower for a more professional feel */
     transition: transform 0.3s ease;
 }
 
 .main-hero-logo:hover {
-    transform: scale(1.05); /* Slight grow on hover */
-    filter: brightness(1.1);
+    transform: scale(1.08); /* Keeps it interactive when users hover */
 }
 
-/* Floating Animation Keyframes */
+/* Smoother Floating Animation */
 @keyframes float {
-	0% { transform: translateY(0px); }
-	50% { transform: translateY(-15px); }
-	100% { transform: translateY(0px); }
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); } /* Reduced movement range */
+    100% { transform: translateY(0px); }
 }
 
 .logo-wrapper {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
-}
-
-.subtitle {
-    font-size: 1.3rem;
-    color: #1a2a6c;
-    font-weight: 500;
-    margin-bottom: 40px;
 }
