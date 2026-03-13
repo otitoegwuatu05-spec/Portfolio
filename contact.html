@@ -7,7 +7,9 @@
 </head>
 <body>
     <nav>
-        <div class="logo-container"><a href="index.html"><img src="logo.png" class="nav-logo"></a></div>
+        <div class="logo-container">
+            <a href="index.html"><img src="logo.png" class="nav-logo" alt="Logo"></a>
+        </div>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
@@ -15,7 +17,8 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <div class="page-container">
+
+    <div class="page-container" style="display: flex; flex-direction: column; align-items: center; padding-top: 50px;">
         <h1 style="color: #1a2a6c;">Contact Me</h1>
         <form style="display:flex; flex-direction:column; gap:10px; width:300px;">
             <input type="text" placeholder="Name">
@@ -27,12 +30,15 @@
 
     <div id="chatbot-container">
         <div id="chatbot-header">Assistant</div>
-        <div id="chat-window"><p>Hi! Ask me about my skills!</p></div>
+        <div id="chat-window">
+            <p>Hi! Ask me about my skills!</p>
+        </div>
         <div class="chat-input-area">
             <input type="text" id="user-input" placeholder="Type here...">
-            <button id="send-btn">Send</button>
+            <button id="send-btn" onclick="askBot()">Send</button>
         </div>
     </div>
+
     <script src="chatbot.js"></script>
 </body>
 </html>
