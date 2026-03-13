@@ -2,21 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Otito Egwuatu</title>
     <link rel="stylesheet" href="style.css">
+    <title>Projects | Otito Egwuatu</title>
 </head>
 <body>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
+    <nav>
+        <div class="logo-container">
+            <a href="index.html"><img src="logo.png" alt="Logo" class="nav-logo" style="width: 45px; border-radius: 50%;"></a>
+        </div>
+        <ul style="list-style: none; display: flex; gap: 20px;">
+            <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+            <li><a href="about.html" style="color: white; text-decoration: none;">About</a></li>
+            <li><a href="projects.html" style="color: white; text-decoration: none;">Projects</a></li>
+            <li><a href="resume.html" style="color: white; text-decoration: none;">Resume</a></li>
+            <li><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-wrapper">
+        <h1 style="font-size: 2.5rem; margin-bottom: 40px;">Projects</h1>
+        
+        <div style="margin-bottom: 50px;">
             <h3>Copilot Packet Sniffer</h3>
-            <a href="https://github.com/otitoegwuatu05-spec/copilot-packet-sniffer" target="_blank" class="git-link">View on GitHub</a>
+            <p>A network tool for monitoring data packets developed using Python and Scapy.</p>
+            <a href="https://github.com/otitoegwuatu05-spec/copilot-packet-sniffer" target="_blank" class="btn-bubble">View on GitHub</a>
         </div>
-        <div class="project-card" style="margin-top: 20px;">
+
+        <div>
             <h3>Professional Portfolio</h3>
-            <a href="https://github.com/otitoegwuatu05-spec/otitoegwuatu05-spec.github.io" target="_blank" class="git-link">View Portfolio Code</a>
+            <p>Custom-built portfolio showcasing web development and AI integration.</p>
+            <a href="https://github.com/otitoegwuatu05-spec/Portfolio" target="_blank" class="btn-bubble">View Portfolio Code</a>
         </div>
-    </section>
+    </div>
 </body>
 </html>
