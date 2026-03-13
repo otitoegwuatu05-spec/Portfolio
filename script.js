@@ -7,16 +7,22 @@ function askBot() {
 
     display.innerHTML += `<p><b>You:</b> ${text}</p>`;
 
-    let reply = "I'm not sure. Try asking about my 'GPA', 'CCNA', or 'skills'.";
+    let reply = "I'm not sure. Try asking about my 'projects', 'classification', or 'CCNA'.";
 
-    // Broadened logic to catch more questions
-    if (text.includes("gpa") || text.includes("grade") || text.includes("3.1")) {
+    // BROADENED LOGIC: Added Name, Projects, and Senior Classification
+    if (text.includes("name") || text.includes("who are you")) {
+        reply = "I'm Otito Egwuatu, a Computer Technology professional and networking specialist.";
+    } else if (text.includes("project") || text.includes("done") || text.includes("sniffer")) {
+        reply = "I have developed a Copilot Packet Sniffer for network auditing and this Professional Portfolio website.";
+    } else if (text.includes("classification") || text.includes("senior") || text.includes("year") || text.includes("bowie")) {
+        reply = "I am currently a Senior at Bowie State University, majoring in Computer Technology.";
+    } else if (text.includes("gpa") || text.includes("grade") || text.includes("3.1")) {
         reply = "Otito has a 3.1 GPA at Bowie State University.";
     } else if (text.includes("ccna") || text.includes("cert")) {
         reply = "Otito is Cisco CCNA Certified.";
     } else if (text.includes("work") || text.includes("experience") || text.includes("technician")) {
         reply = "Otito has been an IT Technician since 2021.";
-    } else if (text.includes("skill") || text.includes("python") || text.includes("java")) {
+    } else if (text.includes("skills") || text.includes("python") || text.includes("java")) {
         reply = "Otito is proficient in Python, Java, Linux, and Network Security.";
     }
 
