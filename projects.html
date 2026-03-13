@@ -20,20 +20,30 @@
 
     <div class="page-container">
         <h1>My Projects</h1>
-        <div style="margin: 30px 0;">
+        <div style="margin: 30px 0; border-bottom: 1px solid #eee; padding-bottom: 20px;">
             <h3>Copilot Packet Sniffer</h3>
             <p>Network monitoring tool using Python and Scapy.</p>
             <a href="https://github.com/otitoegwuatu05-spec/copilot-packet-sniffer" target="_blank" class="btn-bubble">View on GitHub</a>
+        </div>
+
+        <div style="margin: 30px 0;">
+            <h3>Professional Portfolio Website</h3>
+            <p>The code for this site! Built with HTML, CSS, and JavaScript, and deployed via GitHub Pages.</p>
+            <a href="https://github.com/otitoegwuatu05-spec/Portfolio" target="_blank" class="btn-bubble">View Portfolio Code</a>
         </div>
     </div>
 
     <div id="chatbot-container">
         <div id="chatbot-header">Assistant</div>
-        <div id="chat-window"><p>Hi! Ask me about my projects!</p></div>
+        <div id="chat-window">
+            <p>Hi! Ask me about my projects!</p>
+        </div>
         <div class="chat-input-area">
             <input type="text" id="user-input" placeholder="Type here...">
             <button id="send-btn">Send</button>
         </div>
     </div>
+
+    <script src="chatbot.js"></script>
 </body>
 </html>
