@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Otito Egwuatu | Portfolio</title>
-    <link rel="stylesheet" href="style.css?v=6"> 
+    <link rel="stylesheet" href="style.css?v=7"> 
 </head>
 <body>
 
     <nav>
         <div class="logo-container">
-            <a href="#home" class="logo-link">
+            <a href="index.html" class="logo-link">
                 <img src="logo.png" alt="Logo" class="nav-logo">
                 <span class="logo-text"></span>
             </a>
         </div>
         
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -28,51 +28,23 @@
     <header id="home">
         <div class="hero">
             <h1>Hi, I'm Otito Egwuatu</h1>
-            <p>Computer Technology Student at Bowie State University</p>
+            <p>Senior Computer Technology Student at Bowie State University</p>
         </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a dedicated Computer Technology major at Bowie State University.</p>
-        
-        <div class="skills-container">
-            <div class="skill-box">
-                <h3>Technical Skills</h3>
-                <ul>
-                    <li>Networking: Cisco CCNA Certified</li>
-                    <li>Programming: Python, Java, Linux</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        
-        <div class="project-card">
-            <h3>Copilot Packet Sniffer</h3>
-            <p>A network tool for monitoring and auditing data packets.</p>
-            <a href="https://github.com/otitoegwuatu05-spec/copilot-packet-sniffer" target="_blank" class="git-link">View on GitHub</a>
-        </div>
-
-        <div class="project-card" style="margin-top: 20px;">
-            <h3>Professional Portfolio & AI Assistant</h3>
-            <p>The source code for this website, showcasing custom CSS, JavaScript chatbot logic, and QR integration.</p>
-            <a href="https://github.com/otitoegwuatu05-spec/Portfolio" target="_blank" class="git-link">View Portfolio Code</a>
-        </div>
-    </section>
-
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>Download my full resume for details on my work as an IT Technician.</p>
-        <a href="Otito_Resume.pdf" download class="btn-download">Download Resume (PDF)</a>
-    </section>
-
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:otitoegwuatu05@gmail.com">otitoegwuatu05@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/otitoegwuatu05-spec" target="_blank">otitoegwuatu05-spec</a></p>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message" rows="5" required></textarea>
+            <button type="submit" class="btn-download">Send</button>
+        </form>
+
+        <div style="margin-top: 25px; text-align: center;">
+            <p>Email: <a href="mailto:otitoegwuatu05@gmail.com">otitoegwuatu05@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/otitoegwuatu05-spec" target="_blank">otitoegwuatu05-spec</a></p>
+        </div>
     </section>
 
     <div id="chat-container">
