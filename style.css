@@ -1,7 +1,6 @@
-/* --- Global Theme --- */
 body {
     margin: 0;
-    background-color: #fffdfa; /* Cream Background */
+    background-color: #fffdfa; /* Cream background */
     font-family: 'Segoe UI', sans-serif;
     color: #1a2a6c;
 }
@@ -11,32 +10,93 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px 5%;
-    background-color: #1a2a6c; /* Navy Header */
+    background-color: #1a2a6c; /* Navy header */
 }
 
-/* --- The Green Bubble Style --- */
-.btn-bubble {
-    background-color: #2ecc71; /* Emerald Green */
-    color: white !important;
-    padding: 12px 28px;
-    border-radius: 50px; /* Bubble Shape */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
     text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    border: none;
-    transition: transform 0.2s ease;
+    font-weight: 500;
 }
 
-.btn-bubble:hover {
-    transform: scale(1.05);
+.nav-logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
 }
 
-/* Page Layout */
-.page-wrapper {
+.page-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 80vh;
     text-align: center;
+    padding: 20px;
+}
+
+.btn-bubble {
+    background-color: #2ecc71; /* Green bubble links */
+    color: white !important;
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    border: none;
+    transition: 0.2s;
+}
+
+/* Chatbot Style */
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    border: 1px solid #1a2a6c;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+#chatbot-header {
+    background: #1a2a6c;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#chat-window {
+    height: 200px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.chat-input-area {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+#user-input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+
+#send-btn {
+    background: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
 }
