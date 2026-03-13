@@ -7,22 +7,31 @@
 </head>
 <body>
     <nav>
-        <div class="logo-container"><a href="index.html"><img src="logo.png" alt="Logo"></a></div>
+        <div class="logo-container">
+            <a href="index.html"><img src="logo.png" alt="Logo" class="nav-logo" style="width: 45px; border-radius: 50%;"></a>
+        </div>
         <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <div style="text-align: center; padding-top: 50px;">
-        <h1 style="color: #1a2a6c;">Resume</h1>
-        <p>IT Technician Experience</p>
+
+    <div class="page-container">
+        <h1>Resume</h1>
+        <p>Download my resume to see my professional experience.</p>
         <a href="resume.pdf" download class="btn-bubble">Download Resume (PDF)</a>
     </div>
+
     <div id="chatbot-container">
         <div id="chatbot-header">Assistant</div>
-        <div id="chat-window" style="height:200px; padding:10px;">Hi! Ask about my experience!</div>
+        <div id="chat-window"><p>Hi! Ask me about my experience!</p></div>
+        <div class="chat-input-area">
+            <input type="text" id="user-input" placeholder="Type here...">
+            <button id="send-btn">Send</button>
+        </div>
     </div>
 </body>
 </html>
