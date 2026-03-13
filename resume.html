@@ -2,15 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | Otito Egwuatu</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="page-wrapper">
-        <h1 style="font-size: 2.5rem; margin-bottom: 20px;">Resume</h1>
-        <p style="margin-bottom: 30px;">Download my full resume for details on my work as an IT Technician.</p>
+
+    <nav style="display: flex; justify-content: space-between; align-items: center; padding: 10px 5%; background-color: #1a2a6c;">
+        <div class="logo-container">
+            <a href="index.html"><img src="logo.png" alt="Logo" class="nav-logo" style="width: 45px; border-radius: 50%;"></a>
+        </div>
+        <ul style="list-style: none; display: flex; gap: 20px; margin: 0;">
+            <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+            <li><a href="about.html" style="color: white; text-decoration: none;">About</a></li>
+            <li><a href="projects.html" style="color: white; text-decoration: none;">Projects</a></li>
+            <li><a href="resume.html" style="color: white; text-decoration: none;">Resume</a></li>
+            <li><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 80vh; text-align: center; padding: 20px;">
+        <h1 style="font-size: 2.5rem; color: #1a2a6c; margin-bottom: 20px;">Resume</h1>
+        <p style="font-size: 1.1rem; margin-bottom: 30px;">Download my full resume for details on my work as an IT Technician.</p>
         
         <a href="resume.pdf" download class="btn-bubble">Download Resume (PDF)</a>
     </div>
+
 </body>
 </html>
