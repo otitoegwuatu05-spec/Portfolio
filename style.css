@@ -1,38 +1,123 @@
-/* --- The Green Bubble Button Style --- */
-.btn-bubble {
-    background-color: #2ecc71; /* The exact green from your home page */
-    color: white !important;
-    padding: 12px 25px;
-    border-radius: 30px; /* This creates the "bubble" rounded look */
+/* --- Global Theme --- */
+.cream-bg {
+    background-color: #fffdfa; /* Cream color from your screenshot */
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- Navigation Header --- */
+nav {
+    background-color: #1a2a6c; /* Navy Blue */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    color: white;
+}
+
+.nav-logo {
+    width: 45px;
+    height: auto;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
     text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    border: none;
-    transition: transform 0.2s, background-color 0.2s;
-    box-shadow: 0 4px 10px rgba(46, 204, 113, 0.3);
+    font-weight: 500;
 }
 
-.btn-bubble:hover {
-    background-color: #27ae60;
-    transform: scale(1.05);
+/* --- Hero Section --- */
+.home-hero {
+    text-align: center;
+    padding: 60px 20px 20px;
+    color: #1a2a6c;
 }
 
-/* Ensure consistent layout for all content cards */
+.home-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+.university-status {
+    font-size: 1.1rem;
+    margin-top: 0;
+}
+
+/* --- Content Wrapper & Card --- */
 .content-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 80vh;
     padding: 20px;
-    background-color: #fffdfa; /* Cream background */
 }
 
-.info-card {
-    background: white;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-    max-width: 700px;
+.contact-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     width: 100%;
+    max-width: 800px;
+}
+
+.contact-card h2 {
+    color: #1a2a6c;
+    margin-bottom: 10px;
+}
+
+.navy-divider {
+    border: 0;
+    border-top: 2px solid #1a2a6c;
+    margin-bottom: 25px;
+}
+
+/* --- Form Layout --- */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.form-input {
+    flex: 1;
+    min-width: 150px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-textarea {
+    flex: 2;
+    min-width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 60px;
+}
+
+.form-submit {
+    background-color: #27ae60; /* Green Send Button */
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-links {
+    margin-top: 20px;
     text-align: center;
+}
+
+.contact-links a {
+    color: #0000ee;
+    text-decoration: underline;
 }
