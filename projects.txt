@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Otito Egwuatu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Copilot Packet Sniffer</h3>
+            <a href="https://github.com/otitoegwuatu05-spec/copilot-packet-sniffer" target="_blank" class="git-link">View on GitHub</a>
+        </div>
+        <div class="project-card" style="margin-top: 20px;">
+            <h3>Professional Portfolio</h3>
+            <a href="https://github.com/otitoegwuatu05-spec/otitoegwuatu05-spec.github.io" target="_blank" class="git-link">View Portfolio Code</a>
+        </div>
+    </section>
+</body>
+</html>
