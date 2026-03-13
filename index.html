@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Otito Egwuatu | Home</title>
-    <link rel="stylesheet" href="style.css?v=8"> 
+    <link rel="stylesheet" href="style.css?v=10"> 
 </head>
-<body>
+<body class="animated-bg">
 
     <nav>
         <div class="logo-container">
@@ -25,27 +25,22 @@
 
     <header id="home">
         <div class="hero">
-            <img src="logo.png" alt="Otito Egwuatu Logo" style="width: 120px; border-radius: 50%; margin-bottom: 20px;">
-            
-            <h1>Hi, I'm Otito Egwuatu</h1>
-            <p>Senior Computer Technology Student at Bowie State University</p>
-            
-            <div class="intro-box" style="max-width: 600px; margin: 30px auto; line-height: 1.6;">
-                <p>
-                    I am a Cisco CCNA certified networking professional and an IT Technician with 
-                    experience in system administration and network security. As I complete my final 
-                    year at Bowie State, I am focused on bridging the gap between hardware 
-                    efficiency and software automation.
-                </p>
+            <div class="logo-wrapper">
+                <img src="logo.png" alt="Otito Egwuatu Logo" class="main-hero-logo">
             </div>
             
-            <a href="about.html" class="btn-download" style="display: inline-block; text-decoration: none; padding: 10px 25px;">Learn More About Me</a>
+            <h1>Hi, I'm Otito Egwuatu</h1>
+            <p class="subtitle">Senior Computer Technology Student at Bowie State University</p>
+            
+            <div class="cta-container">
+                <a href="projects.html" class="btn-download">Explore My Projects</a>
+            </div>
         </div>
     </header>
 
     <div id="chat-container">
         <div id="chat-header">Assistant</div>
-        <div id="chat-display">Hi! Ask me about my skills or GPA!</div>
+        <div id="chat-display">Hi! Ask me about my CCNA or my time at Bowie State!</div>
         <div class="chat-input-area">
             <input type="text" id="user-input" placeholder="Type here...">
             <button id="send-btn" onclick="askBot()">Send</button>
