@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | Otito Egwuatu</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Otito Egwuatu | Portfolio</title>
+    <link rel="stylesheet" href="style.css?v=7"> 
 </head>
 <body>
 
@@ -12,32 +12,49 @@
         <div class="logo-container">
             <a href="index.html" class="logo-link">
                 <img src="logo.png" alt="Logo" class="nav-logo">
+                <span class="logo-text"></span>
             </a>
         </div>
+        
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="about-content" style="padding: 120px 10% 40px;">
-        <div style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-            <h2>About Me</h2>
-            <p>I am a dedicated <b>Senior Computer Technology major</b> at Bowie State University with a <b>3.1 GPA</b>.</p>
-            
-            <p>My journey in technology is driven by a passion for networking and security. With a <b>Cisco CCNA certification</b> and hands-on experience as an IT Technician, I specialize in troubleshooting complex systems and optimizing network performance.</p>
+    <header id="home">
+        <div class="hero">
+            <h1>Hi, I'm Otito Egwuatu</h1>
+            <p>Senior Computer Technology Student at Bowie State University</p>
+        </div>
+    </header>
 
-            <h3 style="margin-top: 30px; color: #1a2a6c;">Core Competencies</h3>
-            <ul style="line-height: 1.8;">
-                <li><b>Networking:</b> Cisco CCNA, Routing & Switching, Packet Analysis</li>
-                <li><b>Programming:</b> Python (Scapy, Automation), Java</li>
-                <li><b>Systems:</b> Linux Admin, Windows Server, IT Technical Support</li>
-            </ul>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message" rows="5" required></textarea>
+            <button type="submit" class="btn-download">Send</button>
+        </form>
+
+        <div style="margin-top: 25px; text-align: center;">
+            <p>Email: <a href="mailto:otitoegwuatu05@gmail.com">otitoegwuatu05@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/otitoegwuatu05-spec" target="_blank">otitoegwuatu05-spec</a></p>
         </div>
     </section>
+
+    <div id="chat-container">
+        <div id="chat-header">Assistant</div>
+        <div id="chat-display">Hi! Ask me about my skills!</div>
+        <div class="chat-input-area">
+            <input type="text" id="user-input" placeholder="Type here...">
+            <button id="send-btn" onclick="askBot()">Send</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
