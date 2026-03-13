@@ -2,29 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <title>Projects | Otito Egwuatu</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav></nav>
-
-    <div class="page-container">
+    <nav>
+        <div class="logo-container"><a href="index.html"><img src="logo.png" alt="Logo"></a></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div style="text-align: center; padding-top: 50px;">
         <h1 style="color: #1a2a6c;">My Projects</h1>
-        <div style="margin: 30px 0;">
+        <div style="margin-top: 40px;">
             <h3>Copilot Packet Sniffer</h3>
-            <p>Network tool monitoring data packets with Python.</p>
-            <a href="https://github.com/..." class="btn-bubble">View on GitHub</a>
+            <a href="https://github.com/otitoegwuatu05-spec/copilot-packet-sniffer" class="btn-bubble">View on GitHub</a>
         </div>
     </div>
-
     <div id="chatbot-container">
         <div id="chatbot-header">Assistant</div>
-        <div id="chat-window"><p>Hi! Ask me about my skills or GPA!</p></div>
-        <div class="chat-input-area">
-            <input type="text" id="user-input" placeholder="Type here...">
-            <button id="send-btn">Send</button>
-        </div>
+        <div id="chat-window" style="height:200px; padding:10px;">Hi! Ask about my projects!</div>
     </div>
-    <script src="chatbot.js"></script>
 </body>
 </html>
