@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Otito Egwuatu | Portfolio</title>
-    <link rel="stylesheet" href="style.css?v=7"> 
+    <link rel="stylesheet" href="style.css?v=11"> 
 </head>
 <body>
 
@@ -12,7 +12,6 @@
         <div class="logo-container">
             <a href="index.html" class="logo-link">
                 <img src="logo.png" alt="Logo" class="nav-logo">
-                <span class="logo-text"></span>
             </a>
         </div>
         
@@ -21,35 +20,24 @@
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="resume.html">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
     <header id="home">
         <div class="hero">
+            <img src="logo.png" alt="Otito Egwuatu Logo" class="hero-logo">
             <h1>Hi, I'm Otito Egwuatu</h1>
             <p>Senior Computer Technology Student at Bowie State University</p>
+            <div style="margin-top: 25px;">
+                <a href="projects.html" class="btn-download">View My Projects</a>
+            </div>
         </div>
     </header>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <textarea name="message" placeholder="Message" rows="5" required></textarea>
-            <button type="submit" class="btn-download">Send</button>
-        </form>
-
-        <div style="margin-top: 25px; text-align: center;">
-            <p>Email: <a href="mailto:otitoegwuatu05@gmail.com">otitoegwuatu05@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/otitoegwuatu05-spec" target="_blank">otitoegwuatu05-spec</a></p>
-        </div>
-    </section>
-
     <div id="chat-container">
         <div id="chat-header">Assistant</div>
-        <div id="chat-display">Hi! Ask me about my skills!</div>
+        <div id="chat-display">Hi! Ask me about my skills or GPA!</div>
         <div class="chat-input-area">
             <input type="text" id="user-input" placeholder="Type here...">
             <button id="send-btn" onclick="askBot()">Send</button>
