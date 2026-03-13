@@ -1,26 +1,33 @@
-/* Final Adjusted Hero Logo Size */
-.main-hero-logo {
-    width: 100px; /* Scaled down to professional standard */
-    height: auto;
+/* Animated Background Logic */
+.animated-bg {
+    background: linear-gradient(-45deg, #fffdfa, #f4f1ea, #e8e4d9, #fffdfa);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+    min-height: 100vh;
+    margin: 0;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Enhancing the Hero Logo */
+.hero-logo {
+    width: 130px;
     border-radius: 50%;
-    box-shadow: 0 6px 15px rgba(26, 42, 108, 0.08);
-    animation: float 5s ease-in-out infinite;
+    margin-bottom: 20px;
     transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(26, 42, 108, 0.1);
 }
 
-.main-hero-logo:hover {
-    transform: scale(1.1); /* Slightly more noticeable grow on a smaller logo */
+.hero-logo:hover {
+    transform: scale(1.1); /* Interactive hover effect */
 }
 
-/* Very subtle float so it doesn't look shaky */
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-6px); }
-    100% { transform: translateY(0px); }
-}
-
-.logo-wrapper {
-    margin-bottom: 15px; /* Tighter spacing for a cleaner look */
-    display: flex;
-    justify-content: center;
+.subtitle {
+    font-size: 1.2rem;
+    color: #1a2a6c;
+    margin-bottom: 30px;
 }
