@@ -1,46 +1,70 @@
-/* Ensure the cream background is everywhere */
+/* --- Global Theme Settings --- */
 body {
     margin: 0;
-    background-color: #fffdfa; 
-    font-family: 'Segoe UI', sans-serif;
+    padding: 0;
+    background-color: #fffdfa; /* The exact Cream background you want */
+    color: #1a2a6c; /* The Navy Blue text color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Fix for the navigation bar */
+/* --- Navigation (Header) --- */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 5%;
-    background-color: #1a2a6c; /* Navy Blue */
+    padding: 10px 5%;
+    background-color: #1a2a6c; /* Solid Navy Header */
     color: white;
 }
 
-/* Centering the content card */
-.content-container {
+nav ul {
+    list-style: none;
     display: flex;
-    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-logo {
+    width: 45px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* --- Central Content Container --- */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     min-height: 80vh;
+    text-align: center;
     padding: 20px;
 }
 
+/* --- The White Information Card --- */
 .info-card {
     background: white;
     padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    max-width: 650px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    max-width: 700px;
     width: 100%;
-    text-align: center;
 }
 
-.btn-download {
-    background-color: #2ecc71; /* Emerald Green */
+/* --- Emerald Button --- */
+.btn-emerald {
+    background-color: #2ecc71;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
+    border-radius: 6px;
     text-decoration: none;
-    border-radius: 5px;
     font-weight: bold;
     display: inline-block;
-    margin-top: 10px;
+    border: none;
+    cursor: pointer;
 }
