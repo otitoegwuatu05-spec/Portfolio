@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Otito Egwuatu | Home</title>
-    <link rel="stylesheet" href="style.css?v=9"> 
+    <title>About Me | Otito Egwuatu</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="animated-bg"> <nav>
+<body>
+
+    <nav>
         <div class="logo-container">
             <a href="index.html" class="logo-link">
                 <img src="logo.png" alt="Logo" class="nav-logo">
@@ -21,27 +23,21 @@
         </ul>
     </nav>
 
-    <header id="home">
-        <div class="hero">
-            <img src="logo.png" alt="Otito Egwuatu Logo" class="hero-logo">
+    <section id="about-content" style="padding: 120px 10% 40px;">
+        <div style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+            <h2>About Me</h2>
+            <p>I am a dedicated <b>Senior Computer Technology major</b> at Bowie State University with a <b>3.1 GPA</b>.</p>
             
-            <h1>Hi, I'm Otito Egwuatu</h1>
-            <p class="subtitle">Senior Computer Technology Student at Bowie State University</p>
-            
-            <div class="cta-container">
-                <a href="projects.html" class="btn-download">View My Work</a>
-            </div>
-        </div>
-    </header>
+            <p>My journey in technology is driven by a passion for networking and security. With a <b>Cisco CCNA certification</b> and hands-on experience as an IT Technician, I specialize in troubleshooting complex systems and optimizing network performance.</p>
 
-    <div id="chat-container">
-        <div id="chat-header">Assistant</div>
-        <div id="chat-display">Hi! Ask me about my CCNA or my time at Bowie State!</div>
-        <div class="chat-input-area">
-            <input type="text" id="user-input" placeholder="Type here...">
-            <button id="send-btn" onclick="askBot()">Send</button>
+            <h3 style="margin-top: 30px; color: #1a2a6c;">Core Competencies</h3>
+            <ul style="line-height: 1.8;">
+                <li><b>Networking:</b> Cisco CCNA, Routing & Switching, Packet Analysis</li>
+                <li><b>Programming:</b> Python (Scapy, Automation), Java</li>
+                <li><b>Systems:</b> Linux Admin, Windows Server, IT Technical Support</li>
+            </ul>
         </div>
-    </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
