@@ -1,20 +1,58 @@
-/* Container for page content to match the Home Page vibe */
+/* Core Theme */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fffdfa; /* Cream Background */
+    color: #1a2a6c; /* Navy Text */
+    min-height: 100vh;
+}
+
+/* Unified Header/Nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #1a2a6c;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-logo {
+    width: 45px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Centered Content Layout for All Pages */
 .content-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    min-height: 80vh; /* Keeps it centered vertically */
+    min-height: 80vh;
     padding: 20px;
 }
 
-/* White card effect for project lists or about text */
 .info-card {
     background: white;
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    max-width: 800px;
-    width: 90%;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
 }
