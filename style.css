@@ -1,26 +1,26 @@
-/* Adjusted Hero Logo Size */
+/* Final Adjusted Hero Logo Size */
 .main-hero-logo {
-    width: 150px; /* Scaled down from 220px */
+    width: 100px; /* Scaled down to professional standard */
     height: auto;
     border-radius: 50%;
-    box-shadow: 0 8px 20px rgba(26, 42, 108, 0.1);
-    animation: float 5s ease-in-out infinite; /* Slightly slower for a more professional feel */
+    box-shadow: 0 6px 15px rgba(26, 42, 108, 0.08);
+    animation: float 5s ease-in-out infinite;
     transition: transform 0.3s ease;
 }
 
 .main-hero-logo:hover {
-    transform: scale(1.08); /* Keeps it interactive when users hover */
+    transform: scale(1.1); /* Slightly more noticeable grow on a smaller logo */
 }
 
-/* Smoother Floating Animation */
+/* Very subtle float so it doesn't look shaky */
 @keyframes float {
     0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); } /* Reduced movement range */
+    50% { transform: translateY(-6px); }
     100% { transform: translateY(0px); }
 }
 
 .logo-wrapper {
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Tighter spacing for a cleaner look */
     display: flex;
     justify-content: center;
 }
