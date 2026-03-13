@@ -7,7 +7,9 @@
 </head>
 <body>
     <nav>
-        <div class="logo-container"><a href="index.html"><img src="logo.png" class="nav-logo"></a></div>
+        <div class="logo-container">
+            <a href="index.html"><img src="logo.png" class="nav-logo" alt="Logo"></a>
+        </div>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
@@ -15,19 +17,25 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <div class="page-container">
-        <img src="logo.png" style="width: 130px; border-radius: 50%; margin-bottom: 25px;">
+
+    <div class="page-container" style="text-align: center; padding-top: 50px;">
+        <img src="logo.png" style="width: 130px; border-radius: 50%; margin-bottom: 25px;" alt="Otito Egwuatu Logo">
         <h1>Hi, I'm Otito Egwuatu</h1>
-        <p>Senior Computer Technology Student at Bowie State University</p>
+        <p>I am a dedicated Computer Technology student at Bowie State University with a passion for building secure, efficient, and scalable network infrastructures. With over three years of experience as an IT Technician, with understanding of hardware, software troubleshooting, and systems maintenance.</p>
         <a href="projects.html" class="btn-bubble">View My Projects</a>
     </div>
+
     <div id="chatbot-container">
         <div id="chatbot-header">Assistant</div>
-        <div id="chat-window"><p>Ask me about my skills!</p></div>
+        <div id="chat-window">
+            <p>Ask me about my skills!</p>
+        </div>
         <div class="chat-input-area">
             <input type="text" id="user-input" placeholder="Type...">
-            <button id="send-btn">Send</button>
+            <button id="send-btn" onclick="askBot()">Send</button>
         </div>
     </div>
+
+    <script src="chatbot.js"></script>
 </body>
 </html>
