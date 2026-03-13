@@ -1,44 +1,21 @@
-/* Core Theme */
+/* Ensure the cream background is everywhere */
 body {
     margin: 0;
+    background-color: #fffdfa; 
     font-family: 'Segoe UI', sans-serif;
-    background-color: #fffdfa; /* Cream Background */
-    color: #1a2a6c; /* Navy Text */
-    min-height: 100vh;
 }
 
-/* Unified Header/Nav */
+/* Fix for the navigation bar */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 5%;
-    background-color: #1a2a6c;
+    background-color: #1a2a6c; /* Navy Blue */
     color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.nav-logo {
-    width: 45px;
-    height: auto;
-    border-radius: 50%;
-}
-
-/* Centered Content Layout for All Pages */
+/* Centering the content card */
 .content-container {
     display: flex;
     justify-content: center;
@@ -52,7 +29,18 @@ nav ul li a {
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    max-width: 700px;
+    max-width: 650px;
     width: 100%;
     text-align: center;
+}
+
+.btn-download {
+    background-color: #2ecc71; /* Emerald Green */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
 }
