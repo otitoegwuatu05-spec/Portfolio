@@ -1,48 +1,42 @@
-/* --- Floating Chatbot Bubble --- */
-#chatbot-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 300px;
-    background: white;
-    border-radius: 15px; /* Bubble corners */
-    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
-    overflow: hidden;
-    z-index: 1000;
-    border: 1px solid #1a2a6c;
+/* --- Global Theme --- */
+body {
+    margin: 0;
+    background-color: #fffdfa; /* Cream Background */
+    font-family: 'Segoe UI', sans-serif;
+    color: #1a2a6c;
 }
 
-#chatbot-header {
-    background-color: #1a2a6c; /* Matching Navy Header */
-    color: white;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-}
-
-#chat-window {
-    height: 250px;
-    padding: 10px;
-    overflow-y: auto;
-    font-size: 0.9rem;
-}
-
-.chat-input-area {
+nav {
     display: flex;
-    border-top: 1px solid #eee;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #1a2a6c; /* Navy Header */
 }
 
-#user-input {
-    flex: 1;
-    border: none;
-    padding: 10px;
-    outline: none;
-}
-
-#send-btn {
+/* --- The Green Bubble Style --- */
+.btn-bubble {
     background-color: #2ecc71; /* Emerald Green */
-    color: white;
+    color: white !important;
+    padding: 12px 28px;
+    border-radius: 50px; /* Bubble Shape */
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
     border: none;
-    padding: 10px 15px;
-    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btn-bubble:hover {
+    transform: scale(1.05);
+}
+
+/* Page Layout */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    text-align: center;
 }
