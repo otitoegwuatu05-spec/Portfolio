@@ -1,9 +1,12 @@
 function askBot() {
     const inputField = document.getElementById("user-input");
-    // FIX: Changed "chat-display" to "chat-window" to match your HTML
+    // FIXED: Changed "chat-display" to "chat-window" to match your HTML
     const display = document.getElementById("chat-window"); 
     
-    if (!inputField || !display) return; // Safety check
+    if (!inputField || !display) {
+        console.error("Chatbot elements not found!");
+        return;
+    }
 
     const text = inputField.value.toLowerCase().trim();
     if (text === "") return;
@@ -12,7 +15,6 @@ function askBot() {
 
     let reply = "I'm not sure. Try asking about my 'projects', 'GPA', or 'CCNA'.";
 
-    // Logic for responses
     if (text.includes("name") || text.includes("who are you")) {
         reply = "I'm Otito Egwuatu, a Computer Technology professional and networking specialist.";
     } else if (text.includes("project") || text.includes("done") || text.includes("sniffer")) {
@@ -33,21 +35,3 @@ function askBot() {
     inputField.value = ""; 
     display.scrollTop = display.scrollHeight;
 }
-
-// FIX: Wrapped in DOMContentLoaded so the script waits for the page to load
-document.addEventListener("DOMContentLoaded", function() {
-    const sendBtn = document.getElementById("send-btn");
-    const inputField = document.getElementById("user-input");
-
-    if (sendBtn) {
-        sendBtn.addEventListener("click", askBot);
-    }
-
-    if (inputField) {
-        inputField.addEventListener("keypress", function(e) {
-            if (e.key === "Enter") {
-                askBot();
-            }
-        });
-    }
-});
