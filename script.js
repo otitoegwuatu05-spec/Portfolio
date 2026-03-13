@@ -1,15 +1,18 @@
 function askBot() {
     const inputField = document.getElementById("user-input");
-    const display = document.getElementById("chat-display");
-    const text = inputField.value.toLowerCase().trim();
+    // FIX: Changed "chat-display" to "chat-window" to match your HTML
+    const display = document.getElementById("chat-window"); 
     
+    if (!inputField || !display) return; // Safety check
+
+    const text = inputField.value.toLowerCase().trim();
     if (text === "") return;
 
     display.innerHTML += `<p><b>You:</b> ${text}</p>`;
 
-    let reply = "I'm not sure. Try asking about my 'projects', 'classification', or 'CCNA'.";
+    let reply = "I'm not sure. Try asking about my 'projects', 'GPA', or 'CCNA'.";
 
-    // BROADENED LOGIC: Added Name, Projects, and Senior Classification
+    // Logic for responses
     if (text.includes("name") || text.includes("who are you")) {
         reply = "I'm Otito Egwuatu, a Computer Technology professional and networking specialist.";
     } else if (text.includes("project") || text.includes("done") || text.includes("sniffer")) {
@@ -31,9 +34,20 @@ function askBot() {
     display.scrollTop = display.scrollHeight;
 }
 
-// FIX: This makes the "Enter" key work!
-document.getElementById("user-input").addEventListener("keypress", function(e) {
-    if (e.key === "Enter") {
-        askBot();
+// FIX: Wrapped in DOMContentLoaded so the script waits for the page to load
+document.addEventListener("DOMContentLoaded", function() {
+    const sendBtn = document.getElementById("send-btn");
+    const inputField = document.getElementById("user-input");
+
+    if (sendBtn) {
+        sendBtn.addEventListener("click", askBot);
+    }
+
+    if (inputField) {
+        inputField.addEventListener("keypress", function(e) {
+            if (e.key === "Enter") {
+                askBot();
+            }
+        });
     }
 });
