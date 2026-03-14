@@ -16,11 +16,11 @@ function askBot() {
     let reply = "I'm not sure. Try asking about my 'projects', 'GPA', or 'CCNA'.";
 
     if (text.includes("name") || text.includes("who are you")) {
-        reply = "I'm Otito Egwuatu, a Computer Technology professional and networking specialist.";
+        reply = "His name is Otito Egwuatu, a Computer Technology professional and networking specialist.";
     } else if (text.includes("project") || text.includes("done") || text.includes("sniffer")) {
-        reply = "I have developed a Copilot Packet Sniffer for network auditing and this Professional Portfolio website.";
+        reply = "Otito has developed a Copilot Packet Sniffer for network auditing and this Professional Portfolio website.";
     } else if (text.includes("classification") || text.includes("senior") || text.includes("year") || text.includes("bowie")) {
-        reply = "I am currently a Senior at Bowie State University, majoring in Computer Technology.";
+        reply = "Otito is currently a Senior at Bowie State University, majoring in Computer Technology.";
     } else if (text.includes("gpa") || text.includes("grade") || text.includes("3.1")) {
         reply = "Otito has a 3.1 GPA at Bowie State University.";
     } else if (text.includes("ccna") || text.includes("cert")) {
