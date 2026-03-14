@@ -35,13 +35,37 @@
         </div>
     </div>
 
-    <div id="chatbot-container">
-        <div id="chatbot-header">Otito's Helper</div>
-        <div id="chat-window">
-            <p>Hi! Ask me about my projects!</p>
+    <div id="chat-launcher" onclick="toggleChat()">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/chat-message-sent.png" alt="chat-icon" style="width: 25px;">
+    </div>
+
+    <div id="chatbot-container" class="chat-hidden">
+        <div id="chatbot-header">
+            <div class="header-info" style="display: flex; align-items: center; gap: 10px;">
+                <div class="avatar">OE</div>
+                <div style="text-align: left;">
+                    <div class="bot-name">Otito's Assistant</div>
+                    <div class="status" style="color: #2ecc71; font-size: 11px;"><span class="status-dot"></span> Online</div>
+                </div>
+            </div>
+            <div class="close-btn" onclick="toggleChat()" style="color: white; font-size: 24px; cursor: pointer; margin-left: auto;">&times;</div>
         </div>
+        
+        <div id="chat-window">
+            <div class="bot-msg">Hi! 👋 Ask me about Otito's skills, projects, or experience!</div>
+            <div id="chat-history"></div>
+        </div>
+
+        <div class="chips-container">
+            <button class="chip" onclick="sendChip('Skills')">Skills</button>
+            <button class="chip" onclick="sendChip('Projects')">Projects</button>
+            <button class="chip" onclick="sendChip('GPA')">GPA</button>
+            <button class="chip" onclick="sendChip('Experience')">Experience</button>
+            <button class="chip" onclick="sendChip('Contact')">Contact</button>
+        </div>
+
         <div class="chat-input-area">
-            <input type="text" id="user-input" placeholder="Type here...">
+            <input type="text" id="user-input" placeholder="Ask me anything...">
             <button id="send-btn" onclick="askBot()">Send</button>
         </div>
     </div>
