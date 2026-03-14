@@ -23,6 +23,13 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: 500;
+    transition: 0.3s ease; /* Smooth color change */
+}
+
+/* HOVER: Nav links change color and lift slightly */
+nav ul li a:hover {
+    color: #2ecc71; /* Green to match buttons */
+    text-shadow: 0 0 5px rgba(46, 204, 113, 0.5);
 }
 
 .nav-logo {
@@ -41,6 +48,16 @@ nav ul li a {
     padding: 20px;
 }
 
+/* HOVER: Profile Image zoom effect */
+.page-container img {
+    transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+.page-container img:hover {
+    transform: scale(1.03); /* Subtle zoom in */
+    border-color: #2ecc71 !important; /* Changes border to green on hover */
+}
+
 .btn-bubble {
     background-color: #2ecc71; /* Green bubble links */
     color: white !important;
@@ -50,7 +67,14 @@ nav ul li a {
     font-weight: bold;
     display: inline-block;
     border: none;
-    transition: 0.2s;
+    transition: 0.3s ease; /* Smooth transition for hover */
+}
+
+/* HOVER: Main buttons lift and glow */
+.btn-bubble:hover {
+    transform: translateY(-4px); /* Moves up 4 pixels */
+    box-shadow: 0 8px 15px rgba(46, 204, 113, 0.4);
+    filter: brightness(1.1);
 }
 
 /* Chatbot Style */
@@ -99,4 +123,11 @@ nav ul li a {
     border: none;
     padding: 10px;
     cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* HOVER: Chatbot send button */
+#send-btn:hover {
+    background: #27ae60; /* Slightly darker green */
+    filter: brightness(1.1);
 }
