@@ -19,13 +19,21 @@
     </nav>
 
     <div class="page-container" style="display: flex; flex-direction: column; align-items: center; padding-top: 50px;">
-        <h1 style="color: #1a2a6c;">Contact Me</h1>
-        <form style="display:flex; flex-direction:column; gap:10px; width:300px;">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Message"></textarea>
-            <button type="submit" class="btn-bubble">Send Message</button>
-        </form>
+        <div style="background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 350px; text-align: center;">
+            <h1 style="color: #1a2a6c; margin-bottom: 20px; border-bottom: 2px solid #1a2a6c; padding-bottom: 10px;">Contact Me</h1>
+            
+            <form style="display:flex; flex-direction:column; gap:12px; margin-bottom: 20px;">
+                <input type="text" placeholder="Name" style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                <input type="email" placeholder="Email" style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                <textarea placeholder="Message" style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; height: 80px;"></textarea>
+                <button type="submit" class="btn-bubble" style="background: #2ecc71; border: none; cursor: pointer; color: white;">Send Message</button>
+            </form>
+
+            <div style="font-size: 0.9em; margin-top: 20px; border-top: 1px solid #eee; padding-top: 15px;">
+                <p style="margin: 5px 0;">Email: <a href="mailto:otitoegwuatu05@gmail.com" style="color: #3498db; text-decoration: none;">otitoegwuatu05@gmail.com</a></p>
+                <p style="margin: 5px 0;">GitHub: <a href="https://github.com/otitoegwuatu05-spec" target="_blank" style="color: #3498db; text-decoration: none;">otitoegwuatu05-spec</a></p>
+            </div>
+        </div>
     </div>
 
     <div id="chatbot-container">
@@ -39,6 +47,4 @@
         </div>
     </div>
 
-    <script src="chatbot.js"></script>
-</body>
-</html>
+    <script src="script
