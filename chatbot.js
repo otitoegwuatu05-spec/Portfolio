@@ -30,8 +30,9 @@ function askBot() {
     } else if (text.includes("skills") || text.includes("python") || text.includes("java")) {
         reply = "Otito is proficient in Python, Java, Linux, and Network Security.";
     }
-
-    display.innerHTML += `<p><b>Bot:</b> ${reply}</p>`;
+// CHANGED: "Bot" is now "Otito"
+    display.innerHTML += `<p><b>Otito:</b> ${reply}</p>`;
+    
     inputField.value = ""; 
     display.scrollTop = display.scrollHeight;
 }
