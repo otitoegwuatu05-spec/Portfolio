@@ -1,38 +1,63 @@
+// Function to handle the expanding/shrinking toggle
+function toggleChat() {
+    const chatContainer = document.getElementById("chatbot-container");
+    chatContainer.classList.toggle("chat-hidden");
+}
+
+// Function to handle the "Suggested Chip" clicks
+function sendChip(value) {
+    document.getElementById("user-input").value = value;
+    askBot();
+}
+
 function askBot() {
     const inputField = document.getElementById("user-input");
-    // FIXED: Changed "chat-display" to "chat-window" to match your HTML
-    const display = document.getElementById("chat-window"); 
+    const display = document.getElementById("chat-history"); // Use chat-history for the scrolling area
+    const chatWin = document.getElementById("chat-window"); // Use chat-window for auto-scrolling
     
     if (!inputField || !display) {
         console.error("Chatbot elements not found!");
         return;
     }
 
-    const text = inputField.value.toLowerCase().trim();
+    const text = inputField.value.trim();
+    const lowText = text.toLowerCase();
+    
     if (text === "") return;
 
-    display.innerHTML += `<p><b>You:</b> ${text}</p>`;
+    // Display User Message Bubble
+    display.innerHTML += `<div class="user-msg"><b>You:</b> ${text}</div>`;
 
+    // Default Bot Reply
     let reply = "I'm not sure. Try asking about my 'projects', 'GPA', or 'CCNA'.";
 
-    if (text.includes("name") || text.includes("who are you")) {
+    // Bot Logic
+    if (lowText.includes("name") || lowText.includes("who are you")) {
         reply = "His name is Otito Egwuatu, a Computer Technology professional and networking specialist.";
-    } else if (text.includes("project") || text.includes("done") || text.includes("sniffer")) {
+    } else if (lowText.includes("project") || lowText.includes("done") || lowText.includes("sniffer")) {
         reply = "Otito has developed a Copilot Packet Sniffer for network auditing and this Professional Portfolio website.";
-    } else if (text.includes("classification") || text.includes("senior") || text.includes("year") || text.includes("bowie")) {
+    } else if (lowText.includes("classification") || lowText.includes("senior") || lowText.includes("year") || lowText.includes("bowie")) {
         reply = "Otito is currently a Senior at Bowie State University, majoring in Computer Technology.";
-    } else if (text.includes("gpa") || text.includes("grade") || text.includes("3.1")) {
+    } else if (lowText.includes("gpa") || lowText.includes("grade") || lowText.includes("3.1")) {
         reply = "Otito has a 3.1 GPA at Bowie State University.";
-    } else if (text.includes("ccna") || text.includes("cert")) {
+    } else if (lowText.includes("ccna") || lowText.includes("cert")) {
         reply = "Otito is Cisco CCNA Certified.";
-    } else if (text.includes("work") || text.includes("experience") || text.includes("technician")) {
-        reply = "Otito has been an IT Technician since 2021.";
-    } else if (text.includes("skills") || text.includes("python") || text.includes("java")) {
+    } else if (lowText.includes("work") || lowText.includes("experience") || lowText.includes("technician")) {
+        reply = "Otito has over three years of experience as an IT Technician.";
+    } else if (lowText.includes("skills") || lowText.includes("python") || lowText.includes("java")) {
         reply = "Otito is proficient in Python, Java, Linux, and Network Security.";
+    } else if (lowText.includes("contact")) {
+        reply = "You can reach Otito via the Contact page or email him at otitoegwuatu05@gmail.com.";
     }
-// CHANGED: "Bot" is now "Otito"
-    display.innerHTML += `<p><b>Otito:</b> ${reply}</p>`;
-    
+
+    // Delay the bot reply slightly to feel more natural
+    setTimeout(() => {
+        display.innerHTML += `<div class="bot-msg"><b>Otito:</b> ${reply}</div>`;
+        
+        // Auto-scroll to the bottom of the window
+        chatWin.scrollTop = chatWin.scrollHeight;
+    }, 400);
+
+    // Clear the input field
     inputField.value = ""; 
-    display.scrollTop = display.scrollHeight;
 }
