@@ -8,7 +8,7 @@
 <body>
     <nav>
         <div class="logo-container">
-            <a href="index.html"><img src="logo.png" alt="Logo" class="nav-logo" style="width: 45px; border-radius: 50%;"></a>
+            <a href="index.html"><img src="logo.png" class="nav-logo" alt="Logo" style="width: 45px; border-radius: 50%;"></a>
         </div>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -18,19 +18,28 @@
         </ul>
     </nav>
 
-    <div class="page-container">
-        <h1>Resume</h1>
-        <p>Download my resume to see my professional experience.</p>
-        <a href="resume.pdf" download class="btn-bubble">Download Resume (PDF)</a>
+    <div class="page-container" style="text-align: center; padding-top: 50px;">
+        <h1 style="color: #1a2a6c;">Resume</h1>
+        <p>Experience in IT Support and Network Security</p>
+        
+        <div style="margin-top: 30px;">
+            <a href="resume.pdf" target="_blank" class="btn-bubble" style="background:#2ecc71; color:white; padding:15px 30px; border-radius:30px; text-decoration:none; display:inline-block; font-weight:bold;">
+                View / Download Resume (PDF)
+            </a>
+        </div>
     </div>
 
     <div id="chatbot-container">
         <div id="chatbot-header">Assistant</div>
-        <div id="chat-window"><p>Hi! Ask me about my experience!</p></div>
+        <div id="chat-window">
+            <p>Hi! Ask me about my experience!</p>
+        </div>
         <div class="chat-input-area">
             <input type="text" id="user-input" placeholder="Type here...">
-            <button id="send-btn">Send</button>
+            <button id="send-btn" onclick="askBot()">Send</button>
         </div>
     </div>
+
+    <script src="chatbot.js"></script>
 </body>
 </html>
